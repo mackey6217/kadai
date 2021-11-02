@@ -24,15 +24,19 @@ function kadai3($arr){
 echo kadai3(array(1,3,5,7,9));
 echo "\n";
 
+//課題3 array_productを使った場合
+echo array_product(array(1,3,5,7,9));
+echo "\n";
+
 //課題4
 function max_array($arr){
 $max_number = $arr[0];
 foreach($arr as $a){
     if($max_number < $a){
         $max_number = $a;
-    }   else{
     }
-}   return $max_number;
+}   
+return $max_number;
 }
 echo max_array(array(2,8,4,1,7,9,3,5,6));
 echo "\n";
@@ -73,4 +77,4 @@ echo "\n";
 date_default_timezone_set('Asia/Tokyo');
 echo date("Y/m/d H:i:s");
 echo "\n";
-
+?>
