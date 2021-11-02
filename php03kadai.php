@@ -1,11 +1,12 @@
 <?PHP
 //課題1
 $name = "shoya";
-if ($name == "shoya"){
+if ($name === "shoya"){
     echo "私は" . $name . "です。";
 }   else {
     echo "私は" . $name . "ではありません。";
 }
+echo "\n";
 
 //課題2
 $total = 0;
@@ -13,10 +14,10 @@ for ($i = 0; $i <= 10000; $i++) {
     $total += $i ;
 }
 echo $total;
-
+echo "\n";
 
 //課題3
-$fruits = array("apple","orange","grape","strawberry","banana");
+$fruits = ['apple','orange','grape','strawberry','banana'];
 foreach($fruits as $fruit){
     echo "要素は" . $fruit;
     echo "\n";
